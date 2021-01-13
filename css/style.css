@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "singleLight";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "light";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Light.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-anchor: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "bold";
+  font-size: 2.7em;
+  color: #31353e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*:focus, *:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-size: 10px;
+  font-family: "regular";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "regular";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img, svg {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.header {
+  background-color: #edeff1;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 49px 0;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__logo_bottom {
+  color: #dd4b2b;
+  font-size: 1.4em;
+  margin-top: 4px;
+}
+.header__nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__nav li {
+  margin: 0 2px;
+}
+.header__nav a {
+  display: block;
+  color: #31353e;
+  font-size: 1.5em;
+  padding: 15px;
+  border-radius: 24.5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.header__nav a:hover {
+  color: #edeff1;
+  background-color: #dd4b2b;
+}
+.header__nav a.nav-link-active {
+  color: #edeff1;
+  background-color: #dd4b2b;
+}
